@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Crates.io Search",
+    "version": "1.0.0",
+    "description": "Search crates.io for Rust crates.",
+    "icons": {
+        "64": "icons/Cargo-Logo-Small.png"
+    },
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "crates.io",
+            "search_url": "https://crates.io/search?q={searchTerms}",
+            "favicon_url": "https://crates.io/favicon.ico",
+            "keyword": "crates"
+        }
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{83bd11d4-17f9-436c-82fc-d460bb28e8e1}",
+            "strict_min_version": "55.0"
+        }
+    }
+}

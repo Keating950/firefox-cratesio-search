@@ -1,0 +1,32 @@
+{
+  "name": "firefox-cratesio-search",
+  "version": "1.0.0",
+  "private": true,
+  "license": "(MIT OR CC-BY-NC-SA-3.0)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keating950/firefox-cratesio-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keating950/firefox-cratesio-search/issues"
+  },
+  "homepage": null,
+  "scripts": {
+    "test": "web-ext lint",
+    "build": "web-ext build --overwrite-dest",
+    "dev": "web-ext run"
+  },
+  "devDependencies": {
+    "web-ext": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "webExt": {
+    "sourceDir": "./src",
+    "artifactsDir": "./dist",
+    "ignoreFiles": [
+      "./icons/!(*.png)"
+    ]
+  }
+}
